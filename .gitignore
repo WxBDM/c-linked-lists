@@ -1,6 +1,12 @@
 # Prerequisites
 *.d
 
+# Makefile
+Makefile
+
+# executable
+test
+
 # Object files
 *.o
 *.ko
