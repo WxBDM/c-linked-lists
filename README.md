@@ -3,8 +3,6 @@ This repository's goal is to demonstrate a singly-linked list implementation in 
 
 The biggest drawback to this mini-project (at the time of writing) is that you are only able to use integers as elements. However, this can easily be fixed if you read through the source code. I will not explain how to do this in this README file.
 
-This code I have written myself with minimal outside sources and help. As mentioned above, there *are* better ways to go about doing this - this is my personal implementation.
-
 # Usage  
 This mini-project supports various types of singly-linked lists in C, which are shown below:
 
