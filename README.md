@@ -57,7 +57,7 @@ When printed using `print_elements()` (built into `main.c`), you will see:
 6
 8
 ```
-Example 3) 
+Example 3) Adding in 5 elements into a descending-ordered linked list with no duplicates.
 ```c
 int main() {
     int_linked_list * list = init_ordered_dec_no_duplicates_linked_list();
