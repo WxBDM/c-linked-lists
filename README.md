@@ -90,6 +90,7 @@ Fork and clone the repository onto your machine.
 #include "inits.h"
 #include "removes.h"
 ```
-3. If you have a Makefile, be sure to update it to include these files.
+3. Instantiate your list as described above and add/remove elements as you see fit for your project.
+4. If you have a Makefile, be sure to update it to include these files.
 
 Note that you do NOT have to move `main.c` or `main.h`, as this is the driver file for the code.
