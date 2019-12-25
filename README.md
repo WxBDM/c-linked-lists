@@ -83,11 +83,12 @@ I built this so that it could be (somewhat) easily integrated into your project.
 __If you use this for your project, please give proper credit by linking this GitHub repository inside of the project and project documentation.__
 
 Fork and clone the repository onto your machine. 
-1. Move the following c and header files into your project directory: `adds`, `inits`
+1. Move the following c and header files into your project directory: `adds`, `inits`, `removes`
 2. Type the following into the `.c` file where you plan on using linked lists:
 ```c
 #include "adds.h"
 #include "inits.h"
+#include "removes.h"
 ```
 3. If you have a Makefile, be sure to update it to include these files.
 
