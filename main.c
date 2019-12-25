@@ -8,6 +8,7 @@
 #include "main.h"
 #include "inits.h"
 #include "adds.h"
+#include "removes.h"
 
 // prints the element of the list.
 void print_elements(int_linked_list * list) {
@@ -22,10 +23,37 @@ void print_elements(int_linked_list * list) {
     free(current); // free the pointer
 }
 
+/*
+ * Driver code for linked list implementation. This is a mere demonstration of how
+ *  the code works.
+ */
 int main() {
+
+    // Example 1
+    // create a linked list in ascending order.
+    int_linked_list * ordered_asc_list = init_ordered_asc_linked_list();
     
+    // add in a bunch of arbitrary values
+    add_element(6, ordered_asc_list);
+    add_element(2, ordered_asc_list);
+    add_element(-3, ordered_asc_list);
+    add_element(8, ordered_asc_list);
+    add_element(1, ordered_asc_list);
+    add_element(2, ordered_asc_list);
+    
+    // remove some of them and one that isn't in the list.
+    remove_element(2, ordered_asc_list);
+    remove_element(0, ordered_asc_list);
+    
+    printf("Example 1 linked list output:\n");
+    print_elements(ordered_asc_list);
+    
+    
+    // Example 2
+    // Create a linked list with no duplicates in descending order.
     int_linked_list * list = init_ordered_dec_no_duplicates_linked_list();
-    
+
+    // arbitrarily add in a bunch of elements
     add_element(3, list);
     add_element(4, list);
     add_element(5, list);
@@ -44,12 +72,14 @@ int main() {
     add_element(92, list);
     add_element(-12, list);
     add_element(-1, list);
+    
+    // now remove some numbers.
+    remove_element(5, list);
+    remove_element(1, list);
+    remove_element(1, list);
+    remove_element(-12, list);
 
+    printf("\nExample 2 linked list output:\n");
     print_elements(list);
-
-    printf("Size of list: %d\n", list -> size);
-    printf("Sum of list: %d\n", list -> sum);
-    printf("Avg of the list: %d\n", list -> average);
-
     return 0;
 }

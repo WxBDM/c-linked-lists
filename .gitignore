@@ -4,6 +4,9 @@
 # Makefile
 Makefile
 
+# DS Store
+.DS_Store
+
 # executable
 test
 
