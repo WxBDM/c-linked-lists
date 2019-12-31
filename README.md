@@ -15,26 +15,28 @@ This mini-project supports various types of singly-linked lists in C, which are 
 | Ordered, Descending |        Yes        |        `init_ordered_dec_linked_list()`        |
 | Ordered, Descending |         No        | `init_ordered_dec_no_duplicates_linked_list()` |
 
-In order to begin adding to a linked list, you must first instatiate a linked list by referring to the table above. Once it is instatiated, then you can begin adding and (coming soon to a GitHub repository near you) removing elements. See examples below.
+In order to begin adding to a linked list, you must first instatiate a linked list by referring to the table above. Once it is instatiated, then you can begin adding and removing elements. See examples below.
 
 # Examples
 The main function (found in `main.c`) contains driver code to demonstrate how to add (and soon remove) elements from a linked list. You may use this for reference.
 
-Example 1) Adding 3 elements into an unordered linked list (that allows duplicates)
+Example 1) Adding 3 elements into an unordered linked list (that allows duplicates) and removing an element
 ```c
 int main() {
     int_linked_list * list = init_unordered_linked_list(); // instantiate
     add_element(6, list); // add 6 into the list
     add_element(2, list); // add 2 into the list
     add_element(5, list); // add 5 into the list
+    add_element(12, list); // adds 12 into the list
+    remove_element(2, list); // removes first instance of element 2
     return 0;
 }
 ```
 When printed using `print_elements()` (built into `main.c`), you will see:
 ```c
 6
-2
 5
+12
 ```
 
 Example 2) Adding 5 elements into an ordered ascending linked list that allows duplicates:
